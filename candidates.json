@@ -1,46 +1,52 @@
 [
-  {
-    "name": "Rahul Sharma",
-    "skills": [
-      "Java",
-      "Spring Boot",
-      "AWS"
-    ],
-    "experience": 8,
-    "location": "Pune",
-    "rate": 60
-  },
-  {
-    "name": "Anita Mehta",
-    "skills": [
-      "Python",
-      "Django",
-      "Azure"
-    ],
-    "experience": 6,
-    "location": "Mumbai",
-    "rate": 55
-  },
-  {
-    "name": "Vikram Patel",
-    "skills": [
-      "DotNet",
-      "Microservices",
-      "Azure"
-    ],
-    "experience": 9,
-    "location": "Bangalore",
-    "rate": 70
-  },
-  {
-    "name": "Sneha Kapoor",
-    "skills": [
-      "React",
-      "NodeJS",
-      "AWS"
-    ],
-    "experience": 5,
-    "location": "Delhi",
-    "rate": 50
-  }
-]
+    {"id":1,"name":"Amit Sharma","email":"amit.sharma@example.com","skills":["Python","AWS","Docker"],"experience_years":6,"location":"Mumbai","availability":"Immediate"},
+    {"id":2,"name":"Neha Patel","email":"neha.patel@example.com","skills":["Java","Spring Boot","Microservices"],"experience_years":5,"location":"Pune","availability":"30 days"},
+    {"id":3,"name":"Rahul Verma","email":"rahul.verma@example.com","skills":["JavaScript","React","Node.js"],"experience_years":4,"location":"Bangalore","availability":"Immediate"},
+    {"id":4,"name":"Priya Iyer","email":"priya.iyer@example.com","skills":["Python","Machine Learning","TensorFlow"],"experience_years":7,"location":"Chennai","availability":"60 days"},
+    {"id":5,"name":"Arjun Mehta","email":"arjun.mehta@example.com","skills":["Go","Kubernetes","Docker"],"experience_years":6,"location":"Hyderabad","availability":"Immediate"},
+    {"id":6,"name":"Sneha Kulkarni","email":"sneha.kulkarni@example.com","skills":["Java","Spring","Kafka"],"experience_years":8,"location":"Mumbai","availability":"30 days"},
+    {"id":7,"name":"Vikram Singh","email":"vikram.singh@example.com","skills":["C#",".NET","Azure"],"experience_years":9,"location":"Delhi","availability":"Immediate"},
+    {"id":8,"name":"Pooja Shah","email":"pooja.shah@example.com","skills":["Angular","TypeScript","HTML"],"experience_years":5,"location":"Ahmedabad","availability":"30 days"},
+    {"id":9,"name":"Rohit Nair","email":"rohit.nair@example.com","skills":["Python","Data Engineering","Spark"],"experience_years":7,"location":"Bangalore","availability":"Immediate"},
+    {"id":10,"name":"Ananya Das","email":"ananya.das@example.com","skills":["UI/UX","Figma","Adobe XD"],"experience_years":4,"location":"Kolkata","availability":"Immediate"},
+    {"id":11,"name":"Karan Malhotra","email":"karan.malhotra@example.com","skills":["DevOps","Terraform","AWS"],"experience_years":8,"location":"Noida","availability":"30 days"},
+    {"id":12,"name":"Divya Reddy","email":"divya.reddy@example.com","skills":["Python","Django","PostgreSQL"],"experience_years":6,"location":"Hyderabad","availability":"Immediate"},
+    {"id":13,"name":"Aditya Joshi","email":"aditya.joshi@example.com","skills":["JavaScript","Vue.js","Node.js"],"experience_years":5,"location":"Pune","availability":"45 days"},
+    {"id":14,"name":"Meera Nambiar","email":"meera.nambiar@example.com","skills":["Data Science","R","Python"],"experience_years":7,"location":"Kochi","availability":"Immediate"},
+    {"id":15,"name":"Sanjay Gupta","email":"sanjay.gupta@example.com","skills":["SQL","Data Warehousing","ETL"],"experience_years":10,"location":"Delhi","availability":"30 days"},
+    {"id":16,"name":"Ritu Chatterjee","email":"ritu.chatterjee@example.com","skills":["Python","NLP","PyTorch"],"experience_years":6,"location":"Kolkata","availability":"Immediate"},
+    {"id":17,"name":"Manish Agarwal","email":"manish.agarwal@example.com","skills":["Java","Spring Boot","AWS"],"experience_years":9,"location":"Jaipur","availability":"60 days"},
+    {"id":18,"name":"Nikita Bansal","email":"nikita.bansal@example.com","skills":["React","Redux","JavaScript"],"experience_years":4,"location":"Gurgaon","availability":"Immediate"},
+    {"id":19,"name":"Harsh Vardhan","email":"harsh.vardhan@example.com","skills":["Kubernetes","Docker","Helm"],"experience_years":7,"location":"Bangalore","availability":"30 days"},
+    {"id":20,"name":"Isha Kapoor","email":"isha.kapoor@example.com","skills":["Product Management","Agile","Scrum"],"experience_years":8,"location":"Mumbai","availability":"Immediate"},
+    {"id":21,"name":"Deepak Yadav","email":"deepak.yadav@example.com","skills":["Python","Flask","MySQL"],"experience_years":5,"location":"Lucknow","availability":"Immediate"},
+    {"id":22,"name":"Shreya Ghosh","email":"shreya.ghosh@example.com","skills":["Tableau","Power BI","SQL"],"experience_years":6,"location":"Kolkata","availability":"30 days"},
+    {"id":23,"name":"Ankit Jain","email":"ankit.jain@example.com","skills":["Java","Kafka","Microservices"],"experience_years":7,"location":"Indore","availability":"Immediate"},
+    {"id":24,"name":"Sonal Arora","email":"sonal.arora@example.com","skills":["HR Analytics","Excel","Power BI"],"experience_years":5,"location":"Chandigarh","availability":"Immediate"},
+    {"id":25,"name":"Rahul Kulkarni","email":"rahul.kulkarni@example.com","skills":["Python","Airflow","ETL"],"experience_years":6,"location":"Pune","availability":"30 days"},
+    {"id":26,"name":"Anjali Menon","email":"anjali.menon@example.com","skills":["React","Next.js","JavaScript"],"experience_years":4,"location":"Bangalore","availability":"Immediate"},
+    {"id":27,"name":"Varun Khanna","email":"varun.khanna@example.com","skills":["C++","Embedded Systems","Linux"],"experience_years":8,"location":"Delhi","availability":"60 days"},
+    {"id":28,"name":"Pankaj Sinha","email":"pankaj.sinha@example.com","skills":["Python","AWS","Lambda"],"experience_years":6,"location":"Patna","availability":"Immediate"},
+    {"id":29,"name":"Garima Arora","email":"garima.arora@example.com","skills":["UI Design","Figma","Sketch"],"experience_years":5,"location":"Delhi","availability":"30 days"},
+    {"id":30,"name":"Abhishek Mishra","email":"abhishek.mishra@example.com","skills":["Java","Spring Boot","Docker"],"experience_years":7,"location":"Bhopal","availability":"Immediate"},
+    {"id":31,"name":"Kavita Sharma","email":"kavita.sharma@example.com","skills":["Testing","Selenium","Cypress"],"experience_years":6,"location":"Noida","availability":"Immediate"},
+    {"id":32,"name":"Tarun Bhatia","email":"tarun.bhatia@example.com","skills":["DevOps","CI/CD","Jenkins"],"experience_years":8,"location":"Gurgaon","availability":"30 days"},
+    {"id":33,"name":"Siddharth Rao","email":"siddharth.rao@example.com","skills":["Python","FastAPI","Redis"],"experience_years":5,"location":"Hyderabad","availability":"Immediate"},
+    {"id":34,"name":"Rashmi Pillai","email":"rashmi.pillai@example.com","skills":["Data Analysis","Python","Pandas"],"experience_years":4,"location":"Trivandrum","availability":"Immediate"},
+    {"id":35,"name":"Akash Tiwari","email":"akash.tiwari@example.com","skills":["Node.js","Express","MongoDB"],"experience_years":6,"location":"Kanpur","availability":"30 days"},
+    {"id":36,"name":"Nandini Iyer","email":"nandini.iyer@example.com","skills":["AI","Deep Learning","TensorFlow"],"experience_years":7,"location":"Chennai","availability":"Immediate"},
+    {"id":37,"name":"Yash Desai","email":"yash.desai@example.com","skills":["React","GraphQL","TypeScript"],"experience_years":5,"location":"Ahmedabad","availability":"Immediate"},
+    {"id":38,"name":"Suresh Naidu","email":"suresh.naidu@example.com","skills":["Oracle","PLSQL","DBA"],"experience_years":10,"location":"Hyderabad","availability":"60 days"},
+    {"id":39,"name":"Aarti Mehra","email":"aarti.mehra@example.com","skills":["Marketing Analytics","SQL","Tableau"],"experience_years":6,"location":"Delhi","availability":"Immediate"},
+    {"id":40,"name":"Prakash Shetty","email":"prakash.shetty@example.com","skills":["AWS","Serverless","Lambda"],"experience_years":8,"location":"Mangalore","availability":"30 days"},
+    {"id":41,"name":"Rohan Kapoor","email":"rohan.kapoor@example.com","skills":["Angular","TypeScript","RxJS"],"experience_years":5,"location":"Chandigarh","availability":"Immediate"},
+    {"id":42,"name":"Swati Bhatt","email":"swati.bhatt@example.com","skills":["Data Science","Python","Scikit-learn"],"experience_years":6,"location":"Dehradun","availability":"Immediate"},
+    {"id":43,"name":"Gaurav Bansal","email":"gaurav.bansal@example.com","skills":["Java","Spring","Microservices"],"experience_years":7,"location":"Noida","availability":"30 days"},
+    {"id":44,"name":"Priyanka Sethi","email":"priyanka.sethi@example.com","skills":["UI/UX","Figma","Prototyping"],"experience_years":4,"location":"Delhi","availability":"Immediate"},
+    {"id":45,"name":"Nitin Verma","email":"nitin.verma@example.com","skills":["Python","Django","REST APIs"],"experience_years":6,"location":"Lucknow","availability":"Immediate"},
+    {"id":46,"name":"Ritika Sharma","email":"ritika.sharma@example.com","skills":["HR","Recruitment","ATS"],"experience_years":5,"location":"Mumbai","availability":"30 days"},
+    {"id":47,"name":"Arvind Nair","email":"arvind.nair@example.com","skills":["Cybersecurity","SIEM","Network Security"],"experience_years":9,"location":"Bangalore","availability":"Immediate"},
+    {"id":48,"name":"Pallavi Patil","email":"pallavi.patil@example.com","skills":["Business Analysis","Agile","JIRA"],"experience_years":7,"location":"Pune","availability":"Immediate"},
+    {"id":49,"name":"Mohit Choudhary","email":"mohit.choudhary@example.com","skills":["Node.js","NestJS","MongoDB"],"experience_years":5,"location":"Jaipur","availability":"30 days"},
+    {"id":50,"name":"Shruti Kulkarni","email":"shruti.kulkarni@example.com","skills":["Python","AI","NLP"],"experience_years":6,"location":"Mumbai","availability":"Immediate"}
+  ]
