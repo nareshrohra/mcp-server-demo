@@ -1,10 +1,16 @@
 from fastapi import FastAPI
 import json
+import random
 
 app = FastAPI(title="MCP Demo")
 
+# Load candidates
 with open("candidates.json") as f:
     candidates = json.load(f)
+
+# Load questionnaire
+with open("questionnaire.json") as f:
+    questionnaire = json.load(f)
 
 
 @app.get("/")
@@ -14,6 +20,7 @@ def home():
 
 @app.get("/candidates")
 def search_candidates(skill: str):
+
     results = []
 
     for c in candidates:
@@ -36,3 +43,21 @@ def candidate_summary(name: str):
 @app.get("/all_candidates")
 def available_candidates():
     return candidates
+
+
+@app.get("/screening_questions")
+def get_questions(skill: str, count: int = 3):
+
+    skill = skill.lower()
+
+    if skill not in questionnaire:
+        return {"message": "Skill not found"}
+
+    questions = questionnaire[skill]
+
+    sample = random.sample(questions, min(count, len(questions)))
+
+    return {
+        "skill": skill,
+        "questions": sample
+    }
