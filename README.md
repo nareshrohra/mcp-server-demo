@@ -1,4 +1,4 @@
-# Infojini MCP Demo
+# MCP Demo
 
 Demo MCP server for staffing intelligence.
 
