@@ -1,0 +1,93 @@
+{
+  "python": [
+    {
+      "question": "What is the difference between a list and a tuple in Python?",
+      "answer": "Lists are mutable while tuples are immutable."
+    },
+    {
+      "question": "What does the 'self' keyword represent in Python classes?",
+      "answer": "It refers to the current instance of the class."
+    },
+    {
+      "question": "What is a Python decorator?",
+      "answer": "A function that modifies the behavior of another function."
+    },
+    {
+      "question": "What is the use of virtual environments?",
+      "answer": "To isolate project dependencies."
+    },
+    {
+      "question": "What is list comprehension?",
+      "answer": "A concise way to create lists using a single line expression."
+    }
+  ],
+
+  "java": [
+    {
+      "question": "What is JVM?",
+      "answer": "Java Virtual Machine that executes Java bytecode."
+    },
+    {
+      "question": "What is method overloading?",
+      "answer": "Multiple methods with the same name but different parameters."
+    },
+    {
+      "question": "What is inheritance?",
+      "answer": "Mechanism where one class acquires properties of another."
+    },
+    {
+      "question": "What is an interface?",
+      "answer": "A contract that classes implement."
+    },
+    {
+      "question": "What is garbage collection?",
+      "answer": "Automatic memory management in Java."
+    }
+  ],
+
+  "sql": [
+    {
+      "question": "What is a primary key?",
+      "answer": "A unique identifier for table rows."
+    },
+    {
+      "question": "Difference between WHERE and HAVING?",
+      "answer": "WHERE filters rows before grouping, HAVING filters after grouping."
+    },
+    {
+      "question": "What is a JOIN?",
+      "answer": "Combines rows from multiple tables."
+    },
+    {
+      "question": "What is normalization?",
+      "answer": "Process of organizing database tables to reduce redundancy."
+    },
+    {
+      "question": "What is an index?",
+      "answer": "Structure used to speed up queries."
+    }
+  ],
+
+  "aws": [
+    {
+      "question": "What is AWS EC2?",
+      "answer": "Elastic Compute Cloud provides scalable virtual servers."
+    },
+    {
+      "question": "What is S3?",
+      "answer": "Simple Storage Service used for object storage."
+    },
+    {
+      "question": "What is IAM?",
+      "answer": "Identity and Access Management service for permissions."
+    },
+    {
+      "question": "What is Lambda?",
+      "answer": "Serverless compute service."
+    },
+    {
+      "question": "What is Auto Scaling?",
+      "answer": "Automatically adjusts compute capacity based on demand."
+    }
+  ]
+}
