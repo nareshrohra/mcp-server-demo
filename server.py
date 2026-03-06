@@ -1,57 +1,38 @@
-import json
 from fastapi import FastAPI
-from mcp.server.fastmcp import FastMCP
+import json
 
-app = FastAPI()
-
-mcp = FastMCP("Infojini Staffing MCP")
+app = FastAPI(title="Infojini MCP Demo")
 
 with open("candidates.json") as f:
     candidates = json.load(f)
 
 
-# MCP TOOL: search candidates
-@mcp.tool()
+@app.get("/")
+def home():
+    return {"message": "MCP Demo Server Running"}
+
+
+@app.get("/candidates")
 def search_candidates(skill: str):
-    result = []
+    results = []
 
     for c in candidates:
         if skill.lower() in [s.lower() for s in c["skills"]]:
-            result.append(c)
+            results.append(c)
 
-    return result
+    return results
 
 
-# MCP TOOL: candidate summary
-@mcp.tool()
+@app.get("/candidate")
 def candidate_summary(name: str):
 
     for c in candidates:
         if c["name"].lower() == name.lower():
             return c
 
-    return "Candidate not found"
+    return {"message": "Candidate not found"}
 
 
-# MCP TOOL: list candidates
-@mcp.tool()
+@app.get("/all_candidates")
 def available_candidates():
     return candidates
-
-
-# REST API (for Copilot Studio)
-@app.get("/candidates")
-def get_candidates(skill: str):
-
-    result = []
-
-    for c in candidates:
-        if skill.lower() in [s.lower() for s in c["skills"]]:
-            result.append(c)
-
-    return result
-
-
-# Run MCP server
-if __name__ == "__main__":
-    mcp.run(transport="http", port=8080)
