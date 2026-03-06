@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 import json
 
-app = FastAPI(title="Infojini MCP Demo")
+app = FastAPI(title="MCP Demo")
 
 with open("candidates.json") as f:
     candidates = json.load(f)
