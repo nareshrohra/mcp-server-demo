@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Rahul Sharma",
+    "skills": [
+      "Java",
+      "Spring Boot",
+      "AWS"
+    ],
+    "experience": 8,
+    "location": "Pune",
+    "rate": 60
+  },
+  {
+    "name": "Anita Mehta",
+    "skills": [
+      "Python",
+      "Django",
+      "Azure"
+    ],
+    "experience": 6,
+    "location": "Mumbai",
+    "rate": 55
+  },
+  {
+    "name": "Vikram Patel",
+    "skills": [
+      "DotNet",
+      "Microservices",
+      "Azure"
+    ],
+    "experience": 9,
+    "location": "Bangalore",
+    "rate": 70
+  },
+  {
+    "name": "Sneha Kapoor",
+    "skills": [
+      "React",
+      "NodeJS",
+      "AWS"
+    ],
+    "experience": 5,
+    "location": "Delhi",
+    "rate": 50
+  }
+]
