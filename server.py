@@ -1,26 +1,22 @@
-from fastapi import FastAPI
+from mcp.server.fastmcp import FastMCP
 import json
 import random
 
-app = FastAPI(title="MCP Demo")
+mcp = FastMCP("Recruitment MCP Server")
 
-# Load candidates
+# Load data
 with open("candidates.json") as f:
     candidates = json.load(f)
 
-# Load questionnaire
 with open("questionnaire.json") as f:
-    questionnaire = json.load(f)
+    questions = json.load(f)
 
 
-@app.get("/")
-def home():
-    return {"message": "MCP Demo Server Running"}
-
-
-@app.get("/candidates")
+@mcp.tool()
 def search_candidates(skill: str):
-
+    """
+    Search candidates by skill
+    """
     results = []
 
     for c in candidates:
@@ -30,9 +26,11 @@ def search_candidates(skill: str):
     return results
 
 
-@app.get("/candidate")
+@mcp.tool()
 def candidate_summary(name: str):
-
+    """
+    Get summary of a candidate by name
+    """
     for c in candidates:
         if c["name"].lower() == name.lower():
             return c
@@ -40,24 +38,25 @@ def candidate_summary(name: str):
     return {"message": "Candidate not found"}
 
 
-@app.get("/all_candidates")
-def available_candidates():
+@mcp.tool()
+def list_candidates():
+    """
+    Return all available candidates
+    """
     return candidates
 
 
-@app.get("/screening_questions")
-def get_questions(skill: str, count: int = 3):
+@mcp.tool()
+def screening_questions(skill: str, count: int = 3):
+    """
+    Return random screening questions for a skill
+    """
 
-    skill = skill.lower()
-
-    if skill not in questionnaire:
+    if skill not in questions:
         return {"message": "Skill not found"}
 
-    questions = questionnaire[skill]
+    return random.sample(questions[skill], min(count, len(questions[skill])))
 
-    sample = random.sample(questions, min(count, len(questions)))
 
-    return {
-        "skill": skill,
-        "questions": sample
-    }
+if __name__ == "__main__":
+    mcp.run(transport="streamable-http", host="0.0.0.0", port=8080, path="/mcp")
