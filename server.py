@@ -1,6 +1,7 @@
 from mcp.server.fastmcp import FastMCP
 import json
 import random
+import os
 
 mcp = FastMCP("Recruitment MCP Server")
 
@@ -59,4 +60,11 @@ def screening_questions(skill: str, count: int = 3):
 
 
 if __name__ == "__main__":
-    mcp.run(transport="streamable-http", host="0.0.0.0", port=8080, path="/mcp")
+    port = int(os.environ.get("PORT", 8080))
+    print(f"Starting MCP server on port {port}")
+
+    mcp.run(
+        transport="sse",
+        host="0.0.0.0",
+        port=port
+    )
