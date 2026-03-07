@@ -3,7 +3,7 @@ import json
 import random
 import os
 
-mcp = FastMCP("Recruitment MCP Server")
+mcp = FastMCP("Recruitment MCP Server", host="0.0.0.0", port=8080)
 
 # Load data
 with open("candidates.json") as f:
