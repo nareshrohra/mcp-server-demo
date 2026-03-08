@@ -5,9 +5,9 @@ build:
   commands:
     build:
       - python3 -m pip install --upgrade pip
-      - python3 -m pip install --no-cache-dir -r requirements.txt
+      - python3 -m pip install --no-cache-dir -r requirements.txt --target /app/.deps
 
 run:
-  command: python3 server.py
+  command: PYTHONPATH=/app/.deps python3 server.py
   network:
     port: 8080
