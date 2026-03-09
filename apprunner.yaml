@@ -11,3 +11,6 @@ run:
   command: python3 server.py
   network:
     port: 8080
+  env:
+    - name: PYTHONPATH
+      value: /app/.deps
