@@ -8,6 +8,6 @@ build:
       - python3 -m pip install --no-cache-dir -r requirements.txt --target /app/.deps
 
 run:
-  command: /bin/sh -c "PYTHONPATH=/app/.deps python3 server.py"
+  command: python3 server.py
   network:
     port: 8080
