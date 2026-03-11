@@ -6,7 +6,6 @@ Demo MCP server for staffing intelligence.
 - Search candidates by skill
 - Candidate summary
 - List available candidates
-- REST endpoint for Copilot Studio
 
 ## Run locally
 
